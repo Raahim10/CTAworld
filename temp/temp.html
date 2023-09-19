@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<style>
+    .wt1200 {
+        display: block;
+        width: 1200px;
+        margin: auto;
+        position: relative;
+    }
+
+
+    .index-vbar {
+        height: 570px;
+        margin-bottom: 50px;
+    }
+
+    .index-vbar dl {
+        display: flex;
+        padding: 210px 50px 0;
+    }
+
+    .index-vbar dt {
+        margin-right: 50px;
+    }
+
+    .index-vbar dt:hover,
+    .index-vbar dd h3:hover {
+        transition: all 0.3s ease-out;
+        opacity: .8;
+    }
+
+    .index-vbar dd h2:before {
+        content: "";
+        border-top: 4px #FF8B00 solid;
+        width: 34px;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 10px;
+    }
+
+    .index-vbar dd h2 {
+        font-size: 24px;
+        font-family: Arial;
+        font-weight: 400;
+        color: #FFFFFF;
+        line-height: 1;
+        padding-left: 54px;
+        position: relative;
+    }
+
+    .index-vbar dd h3 {
+        display: block;
+        margin: 20px 0;
+    }
+
+    .index-vbar dd h3 a {
+        font-size: 28px;
+        font-family: Arial;
+        font-weight: 400;
+        color: #FFFFFF;
+        line-height: 1;
+    }
+
+    .index-vbar dd p {
+        width: 600px;
+        font-size: 14px;
+        font-family: Arial;
+        font-weight: 400;
+        color: #FFFFFF;
+        line-height: 22px;
+        word-break: break-all;
+    }
+
+    .index-vbar dd p span:nth-of-type(1) {
+        margin-right: 30px;
+        padding-right: 30px;
+        border-right: 1px #fff solid;
+    }
+
+
+    .join-gcp {
+        background: #FFFFFF;
+        border: 1px solid #E5E5E5;
+        border-radius: 5px;
+        padding: 50px;
+        display: flex;
+        margin-top: 50px;
+        justify-content: space-between;
+    }
+
+    .join-gcp dd {
+        display: inline-flex;
+        width: 49%;
+        flex-wrap: wrap;
+    }
+
+    .join-gcp dd:nth-of-type(2) {
+        width: 40%;
+    }
+
+    .join-gcp dd:nth-of-type(2) .vdbar {
+        display: block;
+        width: 100%;
+        padding-bottom: 56.25%;
+        height: 0;
+        position: relative;
+    }
+
+    .join-gcp dd:nth-of-type(2) .vdbar code {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 12;
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 0;
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    .join-gcp dd:nth-of-type(2) .vdbar code img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /*.join-gcp dd:nth-of-type(2) .vdbar code::before{content:""; background:url(../../Images/ImageNew/play.png) no-repeat center; width:95px; height:95px; position:absolute; left:50%; top:50%; margin-left:-50px; margin-top:-50px;opacity:1;filter:alpha(opacity=100);transition: all 0.3s ease-out;}*/
+    .join-gcp dd:nth-of-type(2) .vdbar code:hover::before {
+        opacity: .8;
+        filter: alpha(opacity=80);
+    }
+
+    .join-gcp dd h3 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #333333;
+        padding-bottom: 17px;
+    }
+
+    .join-gcp dd p {
+        font-size: 14px;
+        font-weight: 400;
+        color: #333333;
+        line-height: 36px;
+    }
+
+    .join-gcp dd .obut {
+        display: inline-block;
+        width: 280px;
+        height: 60px;
+        line-height: 60px;
+        background: #d40511;
+        border-radius: 10px;
+        color: #FFFFFF;
+        font-size: 18px;
+        color: #FEFEFE;
+        text-align: center;
+        margin-top: 21px;
+        transition: all 0.3s ease-out;
+    }
+
+    .join-gcp dd .obut:hover {
+        opacity: .8;
+        filter: alpha(opacity=80);
+        transition: all 0.3s ease-out;
+    }
+
+    .query-text,
+    textarea {
+        font-size: 18px;
+        padding: 10px;
+
+
+    }
+
+    .btn {
+        font-size: 18px;
+        padding: 20px;
+        background-color: #d40511;
+        color: white;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .btn:hover {
+         opacity: .8;
+        filter: alpha(opacity=80);
+        transition: all 0.3s ease-out;
+    }
+
+</style>
+
+<body>
+
+    <div class="wt1200 index-vbar"
+        style="background-image:url(https://th.bing.com/th/id/OIP.w31gNemDJ5Pe-848-bQ_2gHaFj?pid=ImgDet&rs=1);background-size: cover;">
+        <dl>
+            <dt><a href="/Video/Index.html"><img src="/images/My images/paly-icon.png"></a></dt>
+            <dd>
+                <h2>MEMBER CHANNEL</h2>
+                <h3><a href="/Video/Index.html">THE VOICE OF CTAworld MEMBERS</a></h3>
+                <p>Listen to voices from China, Singapore, India, USA, Australia, Turkiye, Ukraine, Slovenia...</p>
+
+            </dd>
+        </dl>
+    </div>
+
+    <div class="wt1200">
+        <dl class="join-gcp">
+            <dd>
+                <h3>Benefits of CTAworld Membership?</h3>
+                <p>
+                    Priority rank on company list<br>
+                    Financial protection up to 150,000 USD per year<br>
+                    Exclusive member identity and discounts at JCtrans global freight conferences<br>
+                    Personal consulting services provide by 300 professional staffs
+                </p>
+                <a class="obut" href="/gcpmembership.html" target="_blank">Join Us</a>
+            </dd>
+            <dd class="invd">
+                <div class="vdbar">
+                    <div class="form" style="display: grid; gap: 10px;">
+                        <input type="text" class="query-text" placeholder="Name">
+                        <input type="email" class="query-text" placeholder="Email">
+                        <input type="number" class="query-text" placeholder="Phone Number">
+                        <textarea placeholder="Query" rows="4"></textarea>
+                        <button class="btn" type="submit">Submit</button>
+                    </div>
+                </div>
+            </dd>
+        </dl>
+    </div>
+
+</body>
+
+</html>
